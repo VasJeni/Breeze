@@ -1,0 +1,48 @@
+.b__banner
+  margin-top: 24px
+  margin-bottom: 24px
+  &.container
+    overflow: hidden
+  &--block
+    background: $color-white
+    display: flex
+    justify-content: space-between
+    & > div
+      width: 25%
+      padding: 30px
+      border: 1px solid $color-gray-dark
+    & figure
+      display: flex
+      justify-content: space-around
+      align-items: center
+      & h2
+        @extend %primary-text-bold
+        font-size: 20px
+        color : $color-text-darkgrey
+      & p
+        margin-top: 10px
+        @extend %primary-text
+        font-size: 14px
+        color : $color-text-darkgrey
+  &--image
+    width: 75px
+    height: 75px
+
+  &--best .b__banner--image
+    background: url("../images/ico_sale.png")
+    background-position: center center
+    background-size: contain
+    background-repeat: no-repeat
+
+  &--new .b__banner--image
+    background: url("../images/ico_new.png")
+    background-position: center center
+    background-size: contain
+    background-repeat: no-repeat
+
+  &--only .b__banner--image
+    background: url("../images/ico_only.png")
+    background-position: center center
+    background-size: contain
+    background-repeat: no-repeat
+

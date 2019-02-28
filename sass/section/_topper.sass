@@ -1,0 +1,70 @@
+.b__topper
+  background: linear-gradient($color-aqua-dark 6%, #7fcbce 0 , #7fcbce 12%, #aadce0 0%, #aadce0 18%, $color-gray-dark 0, $color-gray-dark 72%)
+
+  &--phone
+    @extend %font-segoeUI
+    font-size: 11px
+    padding: 20px 0 10px
+
+  &--welcome
+    @extend %primary-text
+    font-size: 12px
+    padding: 20px 0 10px
+    & > a
+      color: $color-aqua-dark
+
+  &--toggle
+    display: flex
+    justify-content: space-between
+
+  &--lang
+    display: flex
+    margin-right: 10px
+    align-items: baseline
+    font-size: 14px
+
+    & > button
+      text-transform: uppercase
+      @extend %primary-text-bold
+      padding: 7px 6px 9px
+      border-right: 1px solid $color-white
+      border-top: none
+      border-bottom: none
+      border-right: none
+      margin-top: 8px
+      background-color: $color-dirty-white
+      &:first-child
+        border-left: 1px solid $color-white
+
+
+    & > .active
+      background-color: $color-lightblue
+      box-shadow: 1px -15px 0 $color-lightblue-rgba
+
+  &--currency
+    display: flex
+    align-items: baseline
+    font-family: sans-serif
+    font-weight : bold
+    font-size: 14px
+
+    & > button
+      padding: 9px 12px 10px
+      border-right: 1px solid $color-white
+      border-top: none
+      border-bottom: none
+      border-right: none
+      margin-top: 8px
+      background-color: $color-dirty-white
+      &:first-child
+        border-left: 1px solid $color-white
+
+    & > .active
+      background-color: $color-lightblue
+      box-shadow: 1px -15px 0 $color-lightblue-rgba
+
+  .container
+    display: flex
+    justify-content: space-between
+
+
