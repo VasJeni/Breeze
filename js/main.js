@@ -5,7 +5,7 @@ $(document).ready(function(){
    currencyToggle();
    loginPOPupView();
    signUpPOPupView();
-
+   headerMenuToogle();
 });
 
 function slickView() {
@@ -87,4 +87,10 @@ function signUpPOPupView(){
 }
 function destroyPOPupSignUp() {
     $('.signUpPOPup').remove();
+}
+function headerMenuToogle(){
+    $('[class ^= b__header--menu] button').click(function () {
+        $('[class ^= b__header--menu] button' + '.active').removeClass('active');
+        $(this).addClass('active');
+    });
 }
