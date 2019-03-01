@@ -66,11 +66,11 @@ function createSignUpPOPup(){
     $('body').append("<div class='signUpPOPup'></div>");
     $('.signUpPOPup').append("<div class='signUpPOPup--wrapper'></div>");
     $('.signUpPOPup--wrapper').html('' +
-        '<label for="user"login>Login</label>'+
+        '<label for="user">User</label>'+
         '<input type="text" name="login" placeholder="Login" maxlength="25" id="user">' +
-        '<label for="email">Password</label>'+
-        '<input type="email" name="email" placeholder="password"  id="email" maxlength="25">'+
-        '<button class="sendLogin">LogIn</button>'
+        '<label for="email">Email</label>'+
+        '<input type="email" name="email" placeholder="email"  id="email" maxlength="25">'+
+        '<button class="sendLogin">register</button>'
     );
     $('.signUpPOPup--wrapper').click(function (event) {
         event.stopImmediatePropagation();

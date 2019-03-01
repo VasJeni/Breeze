@@ -27,19 +27,15 @@
       text-transform: uppercase
       @extend %primary-text-bold
       padding: 7px 6px 9px
-      border-right: 1px solid $color-white
-      border-top: none
-      border-bottom: none
-      border-right: none
+      box-shadow: 0 0 0 $color-white
+      border: none
       margin-top: 8px
       background-color: $color-dirty-white
-      &:first-child
-        border-left: 1px solid $color-white
 
 
     & > .active
       background-color: $color-lightblue
-      box-shadow: 1px -15px 0 $color-lightblue-rgba
+      box-shadow: 0 -15px 0 $color-lightblue-rgba
 
   &--currency
     display: flex
@@ -50,18 +46,14 @@
 
     & > button
       padding: 9px 12px 10px
-      border-right: 1px solid $color-white
-      border-top: none
-      border-bottom: none
-      border-right: none
+      box-shadow: 0 0 0 $color-white
+      border: none
       margin-top: 8px
       background-color: $color-dirty-white
-      &:first-child
-        border-left: 1px solid $color-white
 
     & > .active
       background-color: $color-lightblue
-      box-shadow: 1px -15px 0 $color-lightblue-rgba
+      box-shadow: 0 -15px 0 $color-lightblue-rgba
 
   .container
     display: flex

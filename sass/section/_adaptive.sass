@@ -1,7 +1,3 @@
-@media (max-width: 768px)
-  .b__header--usermenu .logIn,
-  .b__header--usermenu .signUp
-    display: none
 @media (max-width: 760px)
   .b
     &__topper--welcome
@@ -11,7 +7,12 @@
         flex-direction: column
       &--usermenu
         margin-top: 10px
-
+        flex-direction: column
+        & .account,
+        & .wishlist,
+        & .logIn,
+        & .signUp
+          display: inline
       &--slider--text
         & h3
           font-size: 18px
@@ -26,4 +27,20 @@
           display: none
       &--image
         display: none
+
+
+@media (max-width: 768px)
+  .b
+    &__header
+      &--search
+        margin: 10px auto
+      &--info
+        flex-direction: column
+      &--usermenu
+        margin: 10px auto
+        flex-direction: column
+        & .cart
+          margin-top: 10px
+        & button
+          box-shadow: 0 0 2px #e0e0e0
 

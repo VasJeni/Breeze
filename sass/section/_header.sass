@@ -24,12 +24,9 @@
       & > input
         border: none
   &--usermenu
-    &-cart
-      background: $color-white-grey !important
-      &>img
-        margin-right: 5px
+    display: flex
 
-    & > button
+    & button
       background: $color-white
       padding: 5px 10px
       border: none
@@ -38,12 +35,19 @@
       color: $color-text-lightgrey
       box-shadow: 1px 0 0 #e0e0e0
       margin: 0 1px
-      &:last-child
-        margin: 0 0
-        box-shadow: none
+    & .cart
+      margin: 0 0
+      box-shadow: none
+      background: $color-white-grey !important
+      &>img
+        margin-right: 5px
+
   &--menu
     margin-top: 15px
     background: $color-gray-dark
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
     & > button
       background: inherit
       border: none
